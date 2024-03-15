@@ -24,7 +24,7 @@
             </div>
             <ul>
                 <li onmouseover="ranger_tirroir();box_retreci()"><a href="#" onclick="go_to_accueil();">Accueil</a></li>
-                <li onmouseover="ranger_tirroir();box_retreci()"><a href="#" onclick="go_to_about();">about</a></li>
+                <li onmouseover="ranger_tirroir();box_retreci()"><a href="#" onclick="go_to_about();">A propos</a></li>
                 <li onmouseover="ranger_tirroir();box_retreci()"><a href="#" onclick="go_to_contact();">Contact</a></li>
                 <li onmouseover="sortir_tirroir();box_agrandit()">
                     <a id="projet" href="#">projet</a>
@@ -81,18 +81,12 @@
         </div>
     </div>
     <div class="conteneur" style="right: -100vw;" id="cont3">
-        <div class="conteneur2">
-            <div class="paragraphe1">
-            </div>
-            <div class="conteneur3">
-                <div class="paragraphe3">
-                </div>
-                <div class="paragraphe4">
-                </div>
-            </div>
+        <div class="conteneurhaut">
+            <div class='paragraphe_about_1'></div>
+            <div class="paragraphe_about_2"></div>
         </div>
-        <div class="paragraphe2">
-        </div>
+        <div class="paragraphe_about_3"></div>
+    
     </div>
 
 </body>
