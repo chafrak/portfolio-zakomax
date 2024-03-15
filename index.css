@@ -14,7 +14,7 @@ body {
     /* background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(63,63,145,1) 35%, rgba(0,212,255,1) 100%); */
     /* background-color: gray; */
     overflow: hidden;
-
+    /* transform: translateY(200px); */
 }
 .background {
     position: absolute;
@@ -141,11 +141,17 @@ nav li:hover a {
 .navbox:hover ~ .conteneur {
     transform: translateX(312px);
 }
-.box:hover ~ .conteneur.switch {
+.box:hover ~ .conteneur.contact {
     transform: translate(312px , -100vh);
 }
-.navbox:hover ~ .conteneur.switch {
+.navbox:hover ~ .conteneur.contact {
     transform: translate(312px , -100vh);
+}
+.box:hover ~ .conteneur.about {
+    transform: translateX( calc(312px - 100vw) );
+}
+.navbox:hover ~ .conteneur.about {
+    transform: translateX( calc(312px - 100vw) );
 }
 
 .navbox {
@@ -155,6 +161,8 @@ nav li:hover a {
     align-items: center;
     width: 410px;
     z-index: 10;
+    position: fixed;
+    top: 0;
 }
 .nav_agrandit {
     width: 570px;
@@ -186,11 +194,14 @@ nav li:hover a {
 }
 
 
-.conteneur.sorti {
+#cont.sorti.accueil {
     transform: translateX(390px) !important;
 }
-.conteneur.sorti.switch {
+#cont2.sorti.contact {
     transform: translate(390px, -100vh) !important;
+}
+#cont3.sorti.about {
+    transform: translateX(calc(390px - 100vw)) !important;
 }
 
 .conteneur2 {
@@ -274,6 +285,9 @@ nav li:hover a {
 }
 
 
-.conteneur.switch {
+.conteneur.contact {
     transform: translateY(-100vh);
+}
+.conteneur.about {
+    transform: translateX(-100vw);
 }
