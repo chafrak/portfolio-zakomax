@@ -1,0 +1,1 @@
+docker run --rm -i -v "%CD%:/var/www/html/" -p 80:80 php:8.0-apache
