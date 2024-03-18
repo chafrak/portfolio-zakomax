@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>tictactoe</title>
+        <link href="morpion.css" rel="stylesheet" />
+        <script type="text/javascript" src="morpion.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="titlebox">
+                <div class="title">Le big tic tac toe</div>
+                <div class="titlebutton">
+                    <a class="but_accueil" href="index.php">accueil</a>
+                    <a class="but_reset" href="#" onclick="reset();">reset</a>
+                </div>
+            </div>
+                <div class="radius" id="board">
+                    <div class="row row1">
+                        <div class="case" onclick="div_click(event);"></div>
+                        <div class="case" onclick="div_click(event);"></div>
+                        <div class="case" onclick="div_click(event);"></div>
+                    </div>
+                    <div class="row row2">
+                        <div class="case" onclick="div_click(event);"></div>
+                        <div class="case" onclick="div_click(event);"></div>
+                        <div class="case" onclick="div_click(event);"></div>
+                    </div>
+                    <div class="row row3">
+                        <div class="case" onclick="div_click(event);"></div>
+                        <div class="case" onclick="div_click(event);"></div>
+                        <div class="case" onclick="div_click(event);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

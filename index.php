@@ -46,7 +46,7 @@
         </svg>
         <div class="petitbox" id="tirroir">
             <ul>
-                <li><a href="#">jeu1</a></li>
+                <li><a href="morpion.html">jeu1</a></li>
                 <li><a href="#">jeu2</a></li>
             </ul>
         </div>
