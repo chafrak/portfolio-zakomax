@@ -98,3 +98,11 @@ body {
 .case.o {
     color: red;
 }
+
+.case.desactiver {
+    pointer-events: none;
+}
+
+.case.gagner {
+    background-color: green;
+}
