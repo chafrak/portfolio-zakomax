@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
 * {
@@ -362,4 +363,109 @@ details > p {
     margin-right: 7vw;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.57) 0px 32px 64px;
     border-radius: 30px;
+}
+
+.c2 {
+    /* height: 80vh; */
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.c4 {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.57) 0px 32px 64px;
+    height: 40vh;
+    border-radius: 30px;
+    margin: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1vw;
+    backdrop-filter: blur(10px);
+}
+
+.marg_text {
+    padding-left: 1vh;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    border-left: 5px solid orange;
+}
+
+.nom_contact {
+    font-family:"montserrat";
+    font-size: 3vw;
+    font-weight: bolder;
+    display: flex;
+}
+
+.txt_c4 {
+    font-family:"montserrat";
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+.c5 {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.57) 0px 32px 64px;
+    height: 30vh;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    padding: 2vh;
+}
+
+.txt_c5 {
+    font-family:"montserrat";
+    font-size: 2vw;
+    font-weight: bolder;
+    border-bottom: 5px solid orange;
+    width: 80%;
+}
+
+.icone {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+
+.icone_taille {
+    width: 7vw;
+    height: 7vw;
+    border: 5px solid transparent;
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.c3 {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.57) 0px 32px 64px;
+    height: 80vh;
+    width: 30vw;
+    margin-right: 10vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cvphoto {
+    /* width: 25vw; */
+    height: 65vh;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    pointer-events: auto;
+}
+
+.cvphoto:focus {
+    scale: 1.4;
+    transform: translateX(-15vw);
+}
+
+.icone_taille:hover {
+    border: 5px solid orange;
+    border-radius: 27px;
 }
