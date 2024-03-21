@@ -1,3 +1,16 @@
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    location.search
+        .substr(1)
+        .split("&")
+        .forEach(function (item) {
+            tmp = item.split("=");
+            if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+        });
+    return result;
+}
+
 document.addEventListener("DOMContentLoaded", (event) => {
     var tirroir = document.getElementById("tirroir");
     var cont = document.getElementById("cont");
@@ -5,19 +18,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
     var cont3 = document.getElementById("cont3");
     var navbox = document.getElementById("navbox");
 
-    cont.classList.add("accueil");
-    cont2.classList.add("accueil");
-    cont3.classList.add("accueil");
+
+    var page = findGetParameter("page")
+    if (page === "about") {
+        go_to_about()
+    } else if (page === "contact") {
+        go_to_contact()
+    } else {
+        cont.classList.add("accueil");
+        cont2.classList.add("accueil");
+        cont3.classList.add("accueil");
+    }
+    // console.log(findGetParameter("page"));
 });
 
-function sortir_tirroir(){
+function sortir_tirroir() {
     tirroir.classList.add("sorti");
     cont.classList.add("sorti");
     cont2.classList.add("sorti");
     cont3.classList.add("sorti");
 }
 
-function ranger_tirroir(){
+function ranger_tirroir() {
     cont.classList.remove("sorti");
     cont2.classList.remove("sorti");
     cont3.classList.remove("sorti");
@@ -58,9 +80,12 @@ function go_to_contact() {
         cont2.classList.remove("accueil");
         cont3.classList.remove("accueil");
     }
+    window.history.replaceState(null, null, "?page=contact");
 }
 
 function go_to_accueil() {
+    window.history.replaceState(null, null, "?page=accueil");
+
     cont.classList.remove("contact");
     cont2.classList.remove("contact");
     cont3.classList.remove("contact");
@@ -73,6 +98,7 @@ function go_to_accueil() {
 }
 
 function go_to_about() {
+    
     if (cont.classList.contains("contact")) {
         go_to_accueil();
         setTimeout(() => {
@@ -98,5 +124,5 @@ function go_to_about() {
         cont2.classList.remove("accueil");
         cont3.classList.remove("accueil");
     }
-
+    window.history.replaceState(null, null, "?page=about");
 }

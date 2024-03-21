@@ -266,6 +266,8 @@ nav li:hover a {
 
 .heading {
 	color: black;
+    font-family: "montserrat";
+    border-bottom: 3px solid orange;
 	letter-spacing: 5px;
 	font-size: 2.6em;
 	margin-bottom: 30px;
@@ -276,6 +278,14 @@ nav li:hover a {
 .accordion {
 	max-width: 500px;
 	width: calc(100% - 20px);
+}
+
+.mentor {
+    text-decoration: underline 3px black;
+}
+
+.mentor:hover {
+    text-decoration: underline 3px orange;
 }
 
 details {
@@ -340,29 +350,77 @@ details > p {
 }
 
 .paragraphe_about_1 {
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
     height: 45vh;
     width: 35vw;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.57) 0px 32px 64px;
     border-radius: 30px;
+    padding: 2vh;
+    /* display: flex; */
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.titrepara {
+    font-family: "montserrat";
+    font-size: 1.8vw;
+    font-weight: bolder;
+    border-bottom: 5px solid orange;
+    width: 80%;
+}
+
+.text_para {
+    font-family: "montserrat";
+    font-weight: bold;
+    font-size: 1.2vw;
+    padding-left: 2vw;
+    padding-top: 2vh;
 }
 
 .paragraphe_about_2 {
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
     height: 45vh;
     width: 35vw;
     margin-right: 7vw;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.57) 0px 32px 64px;
     border-radius: 30px;
+    backdrop-filter: blur(10px);
+    padding: 2vh;
+}
+
+.hobbies {
+    font-family: "montserrat";
+    font-weight: bold;
+    font-size: 1vw;
+    padding-left: 2vw;
+    margin:2vh
 }
 
 .paragraphe_about_3 {
-    height: 35vh;
-    width: 80vw;
-    background-color:whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 25vh;
+    max-height: 35vh;
+    /* width: 80vw; */
     margin-right: 7vw;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.57) 0px 32px 64px;
     border-radius: 30px;
+    backdrop-filter: blur(10px);
+    padding: 2vw;
+}
+
+.titrepara2 {
+    font-family: "montserrat";
+    font-size: 2.2vw;
+    font-weight: bolder;
+    border-bottom: 5px solid orange;
+    width: 50%;
+}
+
+.txtparcour {
+    font-family: "montserrat";
+    font-weight: bold;
+    font-size: 1.1vw;
+    margin-top: 1.4vh;
 }
 
 .c2 {
@@ -453,16 +511,39 @@ details > p {
 
 .cvphoto {
     /* width: 25vw; */
+    position: relative;
     height: 65vh;
     margin: 20px;
     border-radius: 20px;
     transition: 0.3s ease-in-out;
-    pointer-events: auto;
+    cursor: pointer;
+    z-index: 50;
 }
 
 .cvphoto:focus {
-    scale: 1.4;
-    transform: translateX(-15vw);
+    scale: 1.6;
+    transform: translate(-17vw, 3.5vh);
+    /* box-shadow: 0px 0px 60px 30px #fffcab; */
+}
+.cvphoto:focus ~ .floutage {
+    opacity: 0.65;
+    width: 200vw;
+    height: 150vh;
+    transition: opacity 0.4s ease, width 0s 0s ease, height 0s 0s ease;
+}
+
+.floutage {
+    position: absolute;
+    top: -40vh;
+    left: -100vw;
+    width: 0;
+    height: 0;
+    background-color: black;
+    opacity: 0;
+    /* transition: opacity 0.1s ease; */
+    transition: opacity 0.4s ease, width 0s 0.4s ease, height 0s 0.4s ease;
+    /* background-color: red; */
+    z-index: 2;
 }
 
 .icone_taille:hover {
