@@ -209,24 +209,32 @@ nav li:hover a {
     padding: 10px;
     height: 40vh;
     display: flex;
-    background-color: whitesmoke;
-        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.57) 0px 32px 64px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.57) 0px 32px 64px;
+    backdrop-filter: blur(10px);
     border-radius: 30px;
     margin-bottom: 60px;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.titre{
-    font-family: "Cinzel Decorative", serif;
-    font-size: 60px;
-    font-weight: bolder;
-    border: 2px solid;
-    border-color: black;
-    height: fit-content;
-    left: 50%;
-    transform: translateX(-50%);
+.center_titre {
+    left: 32%;
     position: relative;
+    margin-top: 2%;
+}
+
+.titre{
+    font-family:"montserrat";
+    font-size: 75px;
+    font-weight: bolder;
+    border-bottom: 5px solid;
+    border-color: orange;
+    height: fit-content;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    position: relative;
+
 }
 
 .soustitre {
@@ -238,6 +246,21 @@ nav li:hover a {
     font-family:"Cintzel Decorative", serif;
     font-weight: bold;
     font-size: x-large;
+    margin-top: 3%;
+    position: relative;
+    left: 45%;
+    border-bottom: 3px solid;
+    border-color: orange;
+    width: 24%;
+}
+
+.p2 {
+    font-family:"montserrat";
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 3%;
+    border-bottom: 3px solid;
+    border-color: orange;
 }
 
 .conteneur3 {
@@ -250,8 +273,9 @@ nav li:hover a {
 .paragraphe3 {
     height: 45vh;
     width: 28vw;
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.57) 0px 32px 64px;
+    backdrop-filter: blur(10px);
     border-radius: 30px;
     overflow-y: scroll;
 }
@@ -312,22 +336,61 @@ details > p {
 }
 
 .paragraphe4 {
-    height: 45vh;
+    /* height: 45vh; */
     width: 28vw;
-    background-color:whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.57) 0px 32px 64px;
+    backdrop-filter: blur(10px);
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.titre_retour {
+    font-family: "montserrat";
+    font-size: xx-large;
+    font-weight: bolder;
+    border-bottom: 5px solid;
+    border-color: orange;
+    width: 50%;
+}
+
+.txte {
+    margin-top: 10px;
+    font-family: "montserrat";
+    font-size: large;
+    font-weight: bold;
 }
 
 .paragraphe2 {
-    height: 90vh;
+    /* height: 90vh; */
     width: 20vw;
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.57) 0px 32px 64px;
+    backdrop-filter: blur(10px);
     border-radius: 30px;
     margin-right: 3vw;
+    padding: 10px;
 }
 
+.titre_disclaimer {
+    font-family: "montserrat";
+    font-size: xx-large;
+    font-weight: bolder;
+    border-bottom: 5px solid;
+    border-color: orange;
+    /* padding: 10px; */
+    /* width: 30%; */
+}
+
+.txte_disclaimer {
+    font-family: "montserrat";
+    font-size: 1.3vw;
+    font-weight: bold;
+    margin-top: 10px;
+}
 
 .conteneur.contact {
     transform: translateY(-100vh);
